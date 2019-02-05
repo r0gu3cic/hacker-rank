@@ -1,2 +1,2 @@
 # HackerRank
-Few chalanges solved by me on www.hackerrank.com
+Few challenges solved by me on www.hackerrank.com
