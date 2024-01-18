@@ -1,22 +1,24 @@
+#!/usr/bin/env python3
+
 from collections import Counter
-X=int(input())#broj cipela u radnji
-n=input()#string sa cipele po brojevi koje ima u radnju
-m=list(map(int, n.split()))#lista sa brojevima cipela spremna za unos u recnik
-dict=Counter(m)#{velicina: kolicina}
+X=int(input()) # Number of shoes in the store 
+n=input() # String with shoes by size, which are available in the store
+m=list(map(int, n.split()))# List with shoe sizes ready to be imported in the dictionary
+dict=Counter(m) # {size: available amount}
 # print(dict)
-N=int(input())#broj musterija
-kasa=0
+N=int(input()) # Number of customers
+cashbox=0
 for i in range(N):
-    velicina=0
-    cena=0
-    zahtev=input().split()
-    velicina=int(zahtev[0])
-    # print(velicina)
-    cena=int(zahtev[1])
-    # print(cena)
-    if velicina in dict.keys():
-        kolicina=dict.get(velicina, 0)
-        if kolicina!=0:
-            dict[velicina]=kolicina-1
-            kasa+=cena
-print(str(kasa))
+    size=0
+    price=0
+    request=input().split()
+    size=int(request[0])
+    # print(size)
+    price=int(request[1])
+    # print(price)
+    if size in dict.keys():
+        amount=dict.get(size, 0)
+        if amount!=0:
+            dict[size]=amount-1
+            cashbox+=price
+print(str(cashbox))

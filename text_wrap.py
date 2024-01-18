@@ -1,3 +1,5 @@
+import textwrap
+
 def wrap(string, max_width):
     list=textwrap.wrap(string,width=max_width)
     text=''

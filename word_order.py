@@ -1,11 +1,13 @@
-###INPUT
+#!/usr/bin/env python3
+
+### INPUT
 while True:
-    x=int(input())#number of INPUTs
+    x=int(input()) # Number of INPUTs
     if x>1 and x<=100000:
         break
     else:
         quit()
-words={}#collection of INPUTs, has do be dict because list research is too slow
+words={} # Collection of INPUTs, has do be dict because list research is too slow
 for i in range(x):
     word=input()
     if word not in words:
@@ -13,7 +15,7 @@ for i in range(x):
         words.update(new_word)
     else:
         words[word]+=1
-##OUTPUT
+### OUTPUT
 print(str(len(words)))
 string=''
 for i in words.values():

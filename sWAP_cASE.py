@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def swap_case(s):
     while True:
         if len(s) > 1000:

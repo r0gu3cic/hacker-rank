@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def split_and_join(line):
     a=line
     b=b=a.split()
